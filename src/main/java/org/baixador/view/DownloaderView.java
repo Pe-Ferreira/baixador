@@ -29,6 +29,10 @@ public class DownloaderView extends VerticalLayout {
     }
 
     private void setupUI() {
+        setSizeFull();
+        setAlignItems(Alignment.CENTER);
+        setJustifyContentMode(JustifyContentMode.CENTER);
+
         urlField = new TextField("Youtube video URL");
         urlField.setPlaceholder("My video url");
 
